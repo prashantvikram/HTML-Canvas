@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spirograph</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.5;
+        }
+    
+        #info {
+            height: 30vh;
+            padding: 0 1rem;
+        }
+    
+        a {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="main-canvas"></canvas>
+    <div id="info">
+        <h3>Spirograph</h3>
+        <p>
+            Click on the canvas to generate a new.
+            <br> I used the equations given in <a href="http://www.personal.psu.edu/dpl14/java/parametricequations/spirograph/index.html" target="_blank">this</a> post by David Little.
+            <br> Have a look at my
+            <a href="https://prashantvikram.com"> other projects</a>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

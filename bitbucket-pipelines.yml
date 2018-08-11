@@ -1,0 +1,16 @@
+# This is a sample build configuration for PHP.
+# Check our guides at https://confluence.atlassian.com/x/e8YWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: samueldebruyn/debian-git
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - composer
+        script:
+          - apt-get update
+          - apt-get -qq install git-ftp
+          - git ftp init --user $FTP_USERNAME --passwd $FTP_PASSWORD ftp://43.255.154.110/public_html/projects

@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Spirograph</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Lorenz Attractor</title>
     <style>
         html,
         body {
@@ -15,26 +14,32 @@
             font-family: 'Montserrat', sans-serif;
             line-height: 1.5;
         }
+    
         #info {
             height: 30vh;
             padding: 0 1rem;
         }
+    
         a {
             color: black;
         }
     </style>
 </head>
+
 <body>
     <canvas id="main-canvas"></canvas>
     <div id="info">
-        <h3>Spirograph</h3>
+        <h3>Lorenz Attractor</h3>
         <p>
-            Click on the canvas to generate a new spirograph.
-            <br> I used the equations given in <a href="http://www.personal.psu.edu/dpl14/java/parametricequations/spirograph/index.html" target="_blank">this</a> post by David Little.
+            Click and drag on the canvas to view the attractor from different angles.
+            <br> Rotation matrices are used convert 3D co-ordinates and project those on a 2D plane.
+            To learn more about rotation matrices, read the <i>In three dimensions</i> section <a href="https://en.wikipedia.org/wiki/Rotation_matrix" target="_blank">on this Wikipedia page.</a>
+            You can learn more about the Lorenz Attractor on <a href="https://en.wikipedia.org/wiki/Lorenz_system" target="_blank">this page</a>.
             <br> Have a look at my
             <a href="https://prashantvikram.com"> other projects</a>
         </p>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

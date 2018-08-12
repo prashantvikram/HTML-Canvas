@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Walk</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.5;
+        }
+
+        #info {
+            height: 30vh;
+            padding: 0 1rem;
+        }
+
+        a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="main-canvas"></canvas>
+    <div id="info">
+        <h3>2-dimensional random walk simulator</h3>
+        <p>
+            Click on the canvas to restart.
+            <br> A number between 1 and 4 is picked at random. Each number corresponds to one of the following up, down, left, right.
+            A simulation on <a href="https://en.wikipedia.org/wiki/Random_walk">this Wikipedia page</a> inspired this demo.
+            <br> Have a look at my
+            <a href="https://prashantvikram.com"> other projects</a>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
